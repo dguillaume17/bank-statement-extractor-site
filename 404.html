@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank Statement Extractor</title>
+    <base href="/bank-statement-extractor-site/" />
+    <!-- "dev" is replaced by the build number at deployment (deploy-pages.yml), like the ?build=dev query strings below. -->
+    <meta name="build-number" content="41" />
+    <script>
+        // Safari (iOS) may serve a stale index.html from its cache. If build.json announces another build,
+        // reload with ?build=N: a new URL the browser has never cached. build.json is missing locally: nothing happens.
+        (function () {
+            var current = document.querySelector('meta[name="build-number"]').content;
+            fetch('build.json?t=' + Date.now(), { cache: 'no-store' })
+                .then(function (response) { return response.ok ? response.json() : null; })
+                .then(function (build) {
+                    if (!build || String(build.number) === current) return;
+                    var url = new URL(location.href);
+                    if (url.searchParams.get('build') === String(build.number)) return; // already retried, avoid a loop
+                    url.searchParams.set('build', build.number);
+                    location.replace(url.toString());
+                })
+                .catch(function () { });
+        })();
+    </script>
+    <link href="_framework/dotnet.p2cdq4iu7h.js" rel="preload" as="script" fetchpriority="high" crossorigin="anonymous" integrity="sha256-YQgUS39fDI4cfIo9+pfuQ+jdn3yxKJ0wejewUB5s46g=" />
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css?build=41" />
+    <link rel="stylesheet" href="css/app.css?build=41" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <script type="importmap">{
+  "imports": {
+    "./_framework/blazor.webassembly.js": "./_framework/blazor.webassembly.w3qd1tpl0e.js",
+    "./_framework/dotnet.native.js": "./_framework/dotnet.native.k8ru8ynaxw.js",
+    "./_framework/dotnet.js": "./_framework/dotnet.p2cdq4iu7h.js",
+    "./_framework/dotnet.runtime.js": "./_framework/dotnet.runtime.5nc8i5dl74.js"
+  },
+  "scopes": {},
+  "integrity": {
+    "./_framework/blazor.webassembly.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
+    "./_framework/blazor.webassembly.w3qd1tpl0e.js": "sha256-lDXsDYFgm62F+YUvxES7IOTCXYpiHpU3uR45YdC6mq4=",
+    "./_framework/dotnet.js": "sha256-YQgUS39fDI4cfIo9+pfuQ+jdn3yxKJ0wejewUB5s46g=",
+    "./_framework/dotnet.native.js": "sha256-ZKW2P+aDnuEL/6kUQexcBJ4cmOrJ6SncYrLqskVyJyY=",
+    "./_framework/dotnet.native.k8ru8ynaxw.js": "sha256-ZKW2P+aDnuEL/6kUQexcBJ4cmOrJ6SncYrLqskVyJyY=",
+    "./_framework/dotnet.p2cdq4iu7h.js": "sha256-YQgUS39fDI4cfIo9+pfuQ+jdn3yxKJ0wejewUB5s46g=",
+    "./_framework/dotnet.runtime.5nc8i5dl74.js": "sha256-/3dBg9sj1yLD3h0PDMHnNUXWs/2zWwIMEzom1Xz3Q40=",
+    "./_framework/dotnet.runtime.js": "sha256-/3dBg9sj1yLD3h0PDMHnNUXWs/2zWwIMEzom1Xz3Q40="
+  }
+}</script>
+</head>
+
+<body>
+    <div id="app">
+        <svg class="loading-progress">
+            <circle r="40%" cx="50%" cy="50%" />
+            <circle r="40%" cx="50%" cy="50%" />
+        </svg>
+        <div class="loading-progress-text"></div>
+    </div>
+
+    <div id="blazor-error-ui">
+        An unhandled error has occurred.
+        <a href="." class="reload">Reload</a>
+        <span class="dismiss">🗙</span>
+    </div>
+    <script src="_framework/blazor.webassembly.w3qd1tpl0e.js"></script>
+</body>
+
+</html>
