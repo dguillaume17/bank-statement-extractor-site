@@ -5,4 +5,4 @@ Fichier généré à chaque déploiement : ne pas modifier à la main.
 | Branche | Build | Site |
 |---|---|---|
 | `main` | 31 | https://dguillaume17.github.io/bank-statement-extractor-site/ |
-| `claude/multiline-descriptions` | 35 | https://dguillaume17.github.io/bank-statement-extractor-site/preview/claude-multiline-descriptions/ |
+| `claude/multiline-descriptions` | 36 | https://dguillaume17.github.io/bank-statement-extractor-site/preview/claude-multiline-descriptions/ |
