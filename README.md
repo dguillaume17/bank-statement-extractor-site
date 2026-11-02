@@ -5,4 +5,3 @@ Fichier généré à chaque déploiement : ne pas modifier à la main.
 | Branche | Build | Site |
 |---|---|---|
 | `main` | 41 | https://dguillaume17.github.io/bank-statement-extractor-site/ |
-| `claude/typed-lines-extractor` | 51 | https://dguillaume17.github.io/bank-statement-extractor-site/preview/claude-typed-lines-extractor/ |
