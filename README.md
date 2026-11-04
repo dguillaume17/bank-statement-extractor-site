@@ -5,3 +5,4 @@ Fichier généré à chaque déploiement : ne pas modifier à la main.
 | Branche | Build | Site |
 |---|---|---|
 | `main` | 86 | https://dguillaume17.github.io/bank-statement-extractor-site/ |
+| `claude/modeles-par-ligne` | 88 | https://dguillaume17.github.io/bank-statement-extractor-site/preview/claude-modeles-par-ligne/ |
