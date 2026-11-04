@@ -5,4 +5,4 @@ Fichier généré à chaque déploiement : ne pas modifier à la main.
 | Branche | Build | Site |
 |---|---|---|
 | `main` | 78 | https://dguillaume17.github.io/bank-statement-extractor-site/ |
-| `claude/verification-commune` | 80 | https://dguillaume17.github.io/bank-statement-extractor-site/preview/claude-verification-commune/ |
+| `claude/verification-commune` | 81 | https://dguillaume17.github.io/bank-statement-extractor-site/preview/claude-verification-commune/ |
