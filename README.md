@@ -5,4 +5,4 @@ Fichier généré à chaque déploiement : ne pas modifier à la main.
 | Branche | Build | Site |
 |---|---|---|
 | `main` | 105 | https://dguillaume17.github.io/bank-statement-extractor-site/ |
-| `claude/optimistic-cray-9gdvsl` | 109 | https://dguillaume17.github.io/bank-statement-extractor-site/preview/claude-optimistic-cray-9gdvsl/ |
+| `claude/optimistic-cray-9gdvsl` | 110 | https://dguillaume17.github.io/bank-statement-extractor-site/preview/claude-optimistic-cray-9gdvsl/ |
