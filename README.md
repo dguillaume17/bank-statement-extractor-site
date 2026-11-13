@@ -4,4 +4,4 @@ Fichier généré à chaque déploiement : ne pas modifier à la main.
 
 | Branche | Build | Site |
 |---|---|---|
-| `main` | 135 | https://dguillaume17.github.io/bank-statement-extractor-site/ |
+| `main` | 147 | https://dguillaume17.github.io/bank-statement-extractor-site/ |
